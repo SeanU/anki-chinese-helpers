@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "anki-chinese-helpers"
+version = "0.1.0"
+description = "Anki add-on for working with Chinese flashcards"
+authors = ["Sean Underwood <seanbunderwood@gmail.com>"]
+license = "AGPL v3.0"
+readme = "README.md"
+packages = [{include = "ankichinese"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+anki = "^2.1.57"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+aqt = {extras = ["qt6"], version = "^2.1.57"}
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
